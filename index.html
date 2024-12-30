@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,63 +12,64 @@
 </head>
 
 <body>
-    <div class="topbar">
+    <header class="topbar">
         <div class="topbar-left">
-            <i class="logo fas fa-igloo"></i>
+            <i class="logo fas fa-igloo" aria-label="Logo"></i>
             <h1>Igloo</h1>
         </div>
         <div class="topbar-center">
             <div class="topbar-search">
-                <i class="search-icon fas fa-search"></i>
-                <input type="text" placeholder="Search...">
+                <i class="search-icon fas fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search..." aria-label="Search">
             </div>
         </div>
         <div class="topbar-right">
-            <div class="line-container">
+            <div class="line-container" aria-label="Menu toggle">
                 <div class="line line-1"></div>
                 <div class="line line-2"></div>
                 <div class="line line-3"></div>
             </div>
         </div>
-    </div>
-    <div class="menu">
+    </header>
+    <section class="menu">
         <div class="menu-top">
             <div class="menu-search">
-                <i class="search-icon fas fa-search"></i>
-                <input type="text" placeholder="Search">
+                <i class="search-icon fas fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search" aria-label="Menu Search">
             </div>
         </div>
         <div class="menu-center">
-            <div class="menu-item">
-                <i class="fas fa-home"></i>
+            <div class="menu-item" aria-label="Home">
+                <i class="fas fa-home" aria-hidden="true"></i>
                 <span>Home</span>
             </div>
-            <div class="menu-item">
-                <i class="fas fa-paper-plane"></i>
+            <div class="menu-item" aria-label="Pages">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 <span>Pages</span>
             </div>
-            <div class="menu-item">
-                <i class="fas fa-user-friends"></i>
+            <div class="menu-item" aria-label="Groups">
+                <i class="fas fa-user-friends" aria-hidden="true"></i>
                 <span>Groups</span>
             </div>
-            <div class="menu-item">
-                <i class="fas fa-users"></i>
+            <div class="menu-item" aria-label="People">
+                <i class="fas fa-users" aria-hidden="true"></i>
                 <span>People</span>
             </div>
-            <div class="menu-item">
-                <i class="fas fa-bullhorn"></i>
+            <div class="menu-item" aria-label="Updates">
+                <i class="fas fa-bullhorn" aria-hidden="true"></i>
                 <span>Updates</span>
             </div>
         </div>
         <div class="menu-bottom">
             <div class="menu-bottom-user">
                 <img src="https://images.pexels.com/photos/5944321/pexels-photo-5944321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                    alt="">
+                    alt="User profile picture">
                 <span>John Doe</span>
             </div>
-            <i class="far fa-question-circle"></i>
+            <i class="far fa-question-circle" aria-label="Help"></i>
         </div>
-    </div>
+    </section>
     <script src="app.js"></script>
 </body>
+
 </html>
